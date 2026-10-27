@@ -1,0 +1,3 @@
+/home/carmen/PAOO-labs/Tema1/build_app/CMakeFiles/hello_app.dir
+/home/carmen/PAOO-labs/Tema1/build_app/CMakeFiles/edit_cache.dir
+/home/carmen/PAOO-labs/Tema1/build_app/CMakeFiles/rebuild_cache.dir

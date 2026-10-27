@@ -1,0 +1,6 @@
+/home/carmen/PAOO-labs/Tema1/install/lib/libhello_lib.a
+/home/carmen/PAOO-labs/Tema1/install/include/hello/hello.h
+/home/carmen/PAOO-labs/Tema1/install/lib/cmake/hello_lib/hello_libTargets.cmake
+/home/carmen/PAOO-labs/Tema1/install/lib/cmake/hello_lib/hello_libTargets-noconfig.cmake
+/home/carmen/PAOO-labs/Tema1/install/lib/cmake/hello_lib/hello_libConfig.cmake
+/home/carmen/PAOO-labs/Tema1/install/lib/cmake/hello_lib/hello_libConfigVersion.cmake

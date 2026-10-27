@@ -1,0 +1,7 @@
+/home/carmen/PAOO-labs/Tema1/build_lib/CMakeFiles/hello_lib.dir
+/home/carmen/PAOO-labs/Tema1/build_lib/CMakeFiles/edit_cache.dir
+/home/carmen/PAOO-labs/Tema1/build_lib/CMakeFiles/rebuild_cache.dir
+/home/carmen/PAOO-labs/Tema1/build_lib/CMakeFiles/list_install_components.dir
+/home/carmen/PAOO-labs/Tema1/build_lib/CMakeFiles/install.dir
+/home/carmen/PAOO-labs/Tema1/build_lib/CMakeFiles/install/local.dir
+/home/carmen/PAOO-labs/Tema1/build_lib/CMakeFiles/install/strip.dir
