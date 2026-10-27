@@ -5,10 +5,10 @@
 
 namespace hello {
 
-///\brief Versiunea bibliotecii statice hello_lib
+///\brief Version of the hello_lib static library
 const char* libVersion();
 
-///\brief Clasa exportata de biblioteca statica hello_lib
+///\brief Class exported by the hello_lib static library
 class Hello
 {
 public:

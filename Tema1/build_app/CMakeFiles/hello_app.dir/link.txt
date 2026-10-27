@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/hello_app.dir/src/main.cpp.o -o hello_app  /home/carmen/PAOO-labs/Tema1/install/lib/libhello_lib.a 

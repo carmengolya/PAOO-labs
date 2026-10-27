@@ -1,10 +1,10 @@
 # =============================================================================
-#  Proiectul 1: hello_lib
-#  Construiește o bibliotecă STATICĂ (libhello_lib.a / hello_lib.lib)
-#  și o exportă împreună cu header-ul public inc/hello/hello.h
+#  Project 1: hello_lib
+#  Build a STATIC library (libhello_lib.a / hello_lib.lib)
+#  and export it together with the public header inc/hello/hello.h
 # =============================================================================
 
-# CMake version (3.5 = minimul acceptat de CMake 4.x)
+# CMake version (3.5 = minimum supported by CMake 4.x)
 cmake_minimum_required(VERSION 3.5)
 
 # Project name + version
@@ -15,24 +15,24 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-# Lista de fișiere: header public + header privat + sursă
+# File list: public header + private header + source
 set(myfiles
-    inc/hello/hello.h          # header PUBLIC  (se exportă)
-    src/hello_config.h         # header PRIVAT  (rămâne în bibliotecă)
+    include/hello/hello.h          # PUBLIC header  (exported)
+    src/hello_config.h             # PRIVATE header (kept in the library)
     src/hello.cpp)
 
 # Define the STATIC library
 add_library(${PROJECT_NAME} STATIC ${myfiles})
 
-# Alias cu namespace -> consumatorul scrie mereu hello::hello_lib,
-# indiferent dacă biblioteca vine din add_subdirectory sau din find_package
+# Namespace alias -> consumers always write hello::hello_lib,
+# regardless of whether the library comes from add_subdirectory or find_package
 add_library(hello::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
 
-# Căile de include:
-#   PRIVATE src  -> doar pentru compilarea bibliotecii (hello_config.h)
-#   PUBLIC  inc  -> pentru bibliotecă ȘI pentru oricine o folosește
-#     BUILD_INTERFACE   = calea din arborele sursă (la build)
-#     INSTALL_INTERFACE = calea relativă din folderul de instalare
+# Include paths:
+#   PRIVATE src  -> only for compiling the library (hello_config.h)
+#   PUBLIC  inc  -> for the library AND anyone who uses it
+#     BUILD_INTERFACE   = path in the source tree (at build time)
+#     INSTALL_INTERFACE = relative path in the installation folder
 target_include_directories(${PROJECT_NAME}
     PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}/src
@@ -40,35 +40,35 @@ target_include_directories(${PROJECT_NAME}
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/inc>
         $<INSTALL_INTERFACE:include>)
 
-# Macro transmis compilatorului (doar pentru sursele bibliotecii)
+# Macro passed to the compiler (only for library sources)
 target_compile_definitions(${PROJECT_NAME}
     PRIVATE HELLO_LIB_VERSION="${PROJECT_VERSION}")
 
 # =============================================================================
-#  EXPORT: biblioteca statică + header-ul + fișierele de configurare CMake
-#  Rezultatul după "cmake --install":
+#  EXPORT: static library + header + CMake configuration files
+#  Result after "cmake --install":
 #     <prefix>/lib/libhello_lib.a
 #     <prefix>/include/hello/hello.h
 #     <prefix>/lib/cmake/hello_lib/hello_libConfig.cmake  (+ Targets, Version)
 # =============================================================================
 include(CMakePackageConfigHelpers)
 
-# 1) Biblioteca statică (.a / .lib)
+# 1) Static library (.a / .lib)
 install(TARGETS ${PROJECT_NAME}
         EXPORT  ${PROJECT_NAME}Targets
         ARCHIVE DESTINATION lib)
 
-# 2) Header-ul public (.h)
-install(FILES inc/hello/hello.h
+# 2) Public header (.h)
+install(FILES include/hello/hello.h
         DESTINATION include/hello)
 
-# 3) Fișierul cu target-ul importat hello::hello_lib
+# 3) File containing the imported hello::hello_lib target
 install(EXPORT ${PROJECT_NAME}Targets
         FILE        ${PROJECT_NAME}Targets.cmake
         NAMESPACE   hello::
         DESTINATION lib/cmake/${PROJECT_NAME})
 
-# 4) hello_libConfig.cmake + hello_libConfigVersion.cmake -> pentru find_package()
+# 4) hello_libConfig.cmake + hello_libConfigVersion.cmake -> for find_package()
 configure_package_config_file(
     cmake/${PROJECT_NAME}Config.cmake.in
     ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}Config.cmake

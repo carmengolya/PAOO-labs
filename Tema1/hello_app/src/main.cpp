@@ -1,4 +1,4 @@
-#include <hello/hello.h>   // header-ul exportat de hello_lib
+#include <hello/hello.h>   // header exported by hello_lib
 
 #include <iostream>
 

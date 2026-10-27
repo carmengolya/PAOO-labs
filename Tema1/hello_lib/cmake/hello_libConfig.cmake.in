@@ -1,6 +1,6 @@
 @PACKAGE_INIT@
 
-# Importa target-ul hello::hello_lib (biblioteca statica + calea catre header)
+# Import the hello::hello_lib target (static library + header path)
 include("${CMAKE_CURRENT_LIST_DIR}/hello_libTargets.cmake")
 
 check_required_components(hello_lib)

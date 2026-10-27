@@ -1,7 +1,7 @@
 #ifndef HELLO_CONFIG_H
 #define HELLO_CONFIG_H
 
-// Header PRIVAT: folosit doar la compilarea bibliotecii, nu se exporta.
+// PRIVATE header: used only when compiling the library, not exported.
 
 #ifndef HELLO_LIB_VERSION
 #define HELLO_LIB_VERSION "0.0"

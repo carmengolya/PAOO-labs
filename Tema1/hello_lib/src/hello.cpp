@@ -1,5 +1,5 @@
-#include <hello/hello.h>   // header public  (din inc/)
-#include "hello_config.h"  // header privat (din src/)
+#include <hello/hello.h>   // public header (from inc/)
+#include "hello_config.h"  // private header (from src/)
 
 #include <chrono>
 #include <ctime>
