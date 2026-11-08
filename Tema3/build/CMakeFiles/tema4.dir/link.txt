@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/tema4.dir/src/nume.cpp.o CMakeFiles/tema4.dir/src/item4.cpp.o CMakeFiles/tema4.dir/src/item5.cpp.o CMakeFiles/tema4.dir/src/item6.cpp.o CMakeFiles/tema4.dir/src/main.cpp.o -o tema4 
