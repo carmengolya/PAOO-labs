@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/carmen/PAOO-labs/Tema4/src/fereastra.cpp" "CMakeFiles/tema.dir/src/fereastra.cpp.o" "gcc" "CMakeFiles/tema.dir/src/fereastra.cpp.o.d"
+  "/home/carmen/PAOO-labs/Tema4/src/imagine.cpp" "CMakeFiles/tema.dir/src/imagine.cpp.o" "gcc" "CMakeFiles/tema.dir/src/imagine.cpp.o.d"
   "/home/carmen/PAOO-labs/Tema4/src/main.cpp" "CMakeFiles/tema.dir/src/main.cpp.o" "gcc" "CMakeFiles/tema.dir/src/main.cpp.o.d"
   "/home/carmen/PAOO-labs/Tema4/src/punct.cpp" "CMakeFiles/tema.dir/src/punct.cpp.o" "gcc" "CMakeFiles/tema.dir/src/punct.cpp.o.d"
   )

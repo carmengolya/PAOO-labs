@@ -8,10 +8,16 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Demo Item 10: operator= care returnează void -> a = b = c nu compilează
 option(DEMO_ITEM10_VOID "Item 10: operator= returneaza void" OFF)
+# Demo Item 11: dezactivează detectorul și pornește AddressSanitizer
+option(DEMO_ASAN "Item 11: arata use-after-free cu AddressSanitizer" OFF)
 
 set(myfiles
     include/punct.h
+    include/imagine.h
+    include/fereastra.h
     src/punct.cpp
+    src/imagine.cpp
+    src/fereastra.cpp
     src/main.cpp)
 
 add_executable(${PROJECT_NAME} ${myfiles})
@@ -20,4 +26,10 @@ target_include_directories(${PROJECT_NAME} PRIVATE include)
 
 if(DEMO_ITEM10_VOID)
     target_compile_definitions(${PROJECT_NAME} PRIVATE DEMO_ITEM10_VOID)
+endif()
+
+if(DEMO_ASAN)
+    target_compile_definitions(${PROJECT_NAME} PRIVATE DEMO_ASAN)
+    target_compile_options(${PROJECT_NAME} PRIVATE -fsanitize=address -g)
+    target_link_libraries(${PROJECT_NAME} PRIVATE -fsanitize=address)
 endif()

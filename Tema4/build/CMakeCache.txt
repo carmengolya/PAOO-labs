@@ -204,6 +204,9 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Item 11: arata use-after-free cu AddressSanitizer
+DEMO_ASAN:BOOL=OFF
+
 //Item 10: operator= returneaza void
 DEMO_ITEM10_VOID:BOOL=OFF
 

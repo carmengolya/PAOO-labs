@@ -1,4 +1,5 @@
 #include <punct.h>
+#include <fereastra.h>
 
 #include <iostream>
 
@@ -13,6 +14,9 @@ int main()
 
     titlu("Item 10: operator= returneaza o referinta la *this");
     demoItem10();
+
+    titlu("Item 11: auto-atribuirea in operator=");
+    demoItem11();
 
     return 0;
 }

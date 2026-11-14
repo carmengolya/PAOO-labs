@@ -83,10 +83,38 @@ CMakeFiles/tema.dir/src/punct.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tema.dir/src/punct.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/carmen/PAOO-labs/Tema4/src/punct.cpp -o CMakeFiles/tema.dir/src/punct.cpp.s
 
+CMakeFiles/tema.dir/src/imagine.cpp.o: CMakeFiles/tema.dir/flags.make
+CMakeFiles/tema.dir/src/imagine.cpp.o: /home/carmen/PAOO-labs/Tema4/src/imagine.cpp
+CMakeFiles/tema.dir/src/imagine.cpp.o: CMakeFiles/tema.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/carmen/PAOO-labs/Tema4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tema.dir/src/imagine.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tema.dir/src/imagine.cpp.o -MF CMakeFiles/tema.dir/src/imagine.cpp.o.d -o CMakeFiles/tema.dir/src/imagine.cpp.o -c /home/carmen/PAOO-labs/Tema4/src/imagine.cpp
+
+CMakeFiles/tema.dir/src/imagine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tema.dir/src/imagine.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/carmen/PAOO-labs/Tema4/src/imagine.cpp > CMakeFiles/tema.dir/src/imagine.cpp.i
+
+CMakeFiles/tema.dir/src/imagine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tema.dir/src/imagine.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/carmen/PAOO-labs/Tema4/src/imagine.cpp -o CMakeFiles/tema.dir/src/imagine.cpp.s
+
+CMakeFiles/tema.dir/src/fereastra.cpp.o: CMakeFiles/tema.dir/flags.make
+CMakeFiles/tema.dir/src/fereastra.cpp.o: /home/carmen/PAOO-labs/Tema4/src/fereastra.cpp
+CMakeFiles/tema.dir/src/fereastra.cpp.o: CMakeFiles/tema.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/carmen/PAOO-labs/Tema4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tema.dir/src/fereastra.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tema.dir/src/fereastra.cpp.o -MF CMakeFiles/tema.dir/src/fereastra.cpp.o.d -o CMakeFiles/tema.dir/src/fereastra.cpp.o -c /home/carmen/PAOO-labs/Tema4/src/fereastra.cpp
+
+CMakeFiles/tema.dir/src/fereastra.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tema.dir/src/fereastra.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/carmen/PAOO-labs/Tema4/src/fereastra.cpp > CMakeFiles/tema.dir/src/fereastra.cpp.i
+
+CMakeFiles/tema.dir/src/fereastra.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tema.dir/src/fereastra.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/carmen/PAOO-labs/Tema4/src/fereastra.cpp -o CMakeFiles/tema.dir/src/fereastra.cpp.s
+
 CMakeFiles/tema.dir/src/main.cpp.o: CMakeFiles/tema.dir/flags.make
 CMakeFiles/tema.dir/src/main.cpp.o: /home/carmen/PAOO-labs/Tema4/src/main.cpp
 CMakeFiles/tema.dir/src/main.cpp.o: CMakeFiles/tema.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/carmen/PAOO-labs/Tema4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tema.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/carmen/PAOO-labs/Tema4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tema.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tema.dir/src/main.cpp.o -MF CMakeFiles/tema.dir/src/main.cpp.o.d -o CMakeFiles/tema.dir/src/main.cpp.o -c /home/carmen/PAOO-labs/Tema4/src/main.cpp
 
 CMakeFiles/tema.dir/src/main.cpp.i: cmake_force
@@ -100,16 +128,20 @@ CMakeFiles/tema.dir/src/main.cpp.s: cmake_force
 # Object files for target tema
 tema_OBJECTS = \
 "CMakeFiles/tema.dir/src/punct.cpp.o" \
+"CMakeFiles/tema.dir/src/imagine.cpp.o" \
+"CMakeFiles/tema.dir/src/fereastra.cpp.o" \
 "CMakeFiles/tema.dir/src/main.cpp.o"
 
 # External object files for target tema
 tema_EXTERNAL_OBJECTS =
 
 tema: CMakeFiles/tema.dir/src/punct.cpp.o
+tema: CMakeFiles/tema.dir/src/imagine.cpp.o
+tema: CMakeFiles/tema.dir/src/fereastra.cpp.o
 tema: CMakeFiles/tema.dir/src/main.cpp.o
 tema: CMakeFiles/tema.dir/build.make
 tema: CMakeFiles/tema.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/carmen/PAOO-labs/Tema4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable tema"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/carmen/PAOO-labs/Tema4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable tema"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tema.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

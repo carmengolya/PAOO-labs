@@ -129,6 +129,54 @@ tema/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema.dir/build.make CMakeFiles/tema.dir/build
 .PHONY : tema/fast
 
+src/fereastra.o: src/fereastra.cpp.o
+.PHONY : src/fereastra.o
+
+# target to build an object file
+src/fereastra.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema.dir/build.make CMakeFiles/tema.dir/src/fereastra.cpp.o
+.PHONY : src/fereastra.cpp.o
+
+src/fereastra.i: src/fereastra.cpp.i
+.PHONY : src/fereastra.i
+
+# target to preprocess a source file
+src/fereastra.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema.dir/build.make CMakeFiles/tema.dir/src/fereastra.cpp.i
+.PHONY : src/fereastra.cpp.i
+
+src/fereastra.s: src/fereastra.cpp.s
+.PHONY : src/fereastra.s
+
+# target to generate assembly for a file
+src/fereastra.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema.dir/build.make CMakeFiles/tema.dir/src/fereastra.cpp.s
+.PHONY : src/fereastra.cpp.s
+
+src/imagine.o: src/imagine.cpp.o
+.PHONY : src/imagine.o
+
+# target to build an object file
+src/imagine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema.dir/build.make CMakeFiles/tema.dir/src/imagine.cpp.o
+.PHONY : src/imagine.cpp.o
+
+src/imagine.i: src/imagine.cpp.i
+.PHONY : src/imagine.i
+
+# target to preprocess a source file
+src/imagine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema.dir/build.make CMakeFiles/tema.dir/src/imagine.cpp.i
+.PHONY : src/imagine.cpp.i
+
+src/imagine.s: src/imagine.cpp.s
+.PHONY : src/imagine.s
+
+# target to generate assembly for a file
+src/imagine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema.dir/build.make CMakeFiles/tema.dir/src/imagine.cpp.s
+.PHONY : src/imagine.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -186,6 +234,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... tema"
+	@echo "... src/fereastra.o"
+	@echo "... src/fereastra.i"
+	@echo "... src/fereastra.s"
+	@echo "... src/imagine.o"
+	@echo "... src/imagine.i"
+	@echo "... src/imagine.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

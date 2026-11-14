@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/tema.dir/src/punct.cpp.o CMakeFiles/tema.dir/src/imagine.cpp.o CMakeFiles/tema.dir/src/fereastra.cpp.o CMakeFiles/tema.dir/src/main.cpp.o -o tema  -fsanitize=address 
