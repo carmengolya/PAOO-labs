@@ -1,5 +1,6 @@
 #include <punct.h>
 #include <fereastra.h>
+#include <client.h>
 
 #include <iostream>
 
@@ -17,6 +18,9 @@ int main()
 
     titlu("Item 11: auto-atribuirea in operator=");
     demoItem11();
+
+    titlu("Item 12: copiaza toate partile unui obiect");
+    demoItem12();
 
     return 0;
 }

@@ -1,3 +1,0 @@
-/home/carmen/PAOO-labs/Tema4/build_void/CMakeFiles/tema.dir
-/home/carmen/PAOO-labs/Tema4/build_void/CMakeFiles/edit_cache.dir
-/home/carmen/PAOO-labs/Tema4/build_void/CMakeFiles/rebuild_cache.dir

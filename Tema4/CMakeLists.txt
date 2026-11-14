@@ -15,9 +15,11 @@ set(myfiles
     include/punct.h
     include/imagine.h
     include/fereastra.h
+    include/client.h
     src/punct.cpp
     src/imagine.cpp
     src/fereastra.cpp
+    src/client.cpp
     src/main.cpp)
 
 add_executable(${PROJECT_NAME} ${myfiles})
